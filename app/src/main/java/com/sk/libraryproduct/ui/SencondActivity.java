@@ -30,7 +30,7 @@ public class SencondActivity extends BaseActivity {
     @OnClick(R.id.btnSend)
     void postEventMsg() {
         Log.d("tag", "Hello,send is success!");
-        EventBus.getDefault().post(new BaseMessageEvent("Hello,send is success!"));
+        EventBus.getDefault().post(new BaseMessageEvent<String>("Hello,send is success!"));
     }
 
 
