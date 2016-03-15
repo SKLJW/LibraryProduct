@@ -36,6 +36,6 @@ public class HttpManager {
      */
     public void getData() {
         Map<String, String> params = new HashMap<>();
-        iHttpHelper.doGet("http://edian.guoanshequ.net/index.php?com=com_appService&method=createToken&device=00000000-10b6-7b97-10b6-7b9700000000&push=04ede0d2d06acd604d2db48cdeb5a035f072d31c&time=1456347952&brand=SM-G9009D&type=android&os=5.0&client=1", params);
+        iHttpHelper.doPost("http://edian.guoanshequ.net/index.php?com=com_appService&method=createToken&device=00000000-10b6-7b97-10b6-7b9700000000&push=04ede0d2d06acd604d2db48cdeb5a035f072d31c&time=1456347952&brand=SM-G9009D&type=android&os=5.0&client=1", params);
     }
 }
