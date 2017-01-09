@@ -5,6 +5,5 @@ package com.sk.library.http;
  */
 public class HttpContant {
 
-//    public static final String HTPPMODE = "Volley";
     public static final String HTPPMODE = "Okhttp";
 }
