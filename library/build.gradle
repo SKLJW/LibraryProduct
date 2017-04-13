@@ -122,5 +122,10 @@ dependencies {
     compile 'com.squareup.okio:okio:1.6.0'
     compile 'org.greenrobot:eventbus:3.0.0'
     compile 'com.squareup.okhttp3:okhttp:3.2.0'
+<<<<<<< HEAD
     compile 'com.squareup.retrofit2:retrofit:2.2.0'
+=======
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxandroid:1.0.1'
+>>>>>>> origin/master
 }
