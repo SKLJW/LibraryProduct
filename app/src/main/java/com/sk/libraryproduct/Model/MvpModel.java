@@ -27,8 +27,7 @@ public class MvpModel implements IMvpModel {
 
     @Override
     public void getData() {
-        HttpManager.getInstance(context, new HttpHandler(){
-
+        HttpManager.getInstance(context).getData(new HttpHandler() {
             @Override
             public void onSuccess(String result) {
                 loadDataListener.onSuccess(result);
@@ -43,7 +42,7 @@ public class MvpModel implements IMvpModel {
             public void onFailure(String errorMsg) {
                 loadDataListener.onFailure(errorMsg);
             }
-        }).getData();
+        });
     }
 
 }

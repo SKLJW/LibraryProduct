@@ -1,6 +1,7 @@
 package com.sk.libraryproduct.ui;
 
 import android.util.Log;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.sk.library.Bean.ErrorBean;
@@ -19,13 +20,12 @@ import org.greenrobot.eventbus.Subscribe;
 import java.util.HashMap;
 import java.util.Map;
 
+import butterknife.Bind;
 import butterknife.OnClick;
 
 
-public class MainActivity extends BaseActivity implements IMvpView {
+public class MainActivity extends BaseActivity {
 
-
-    IMvpPresenter iMvpPresenter;
 
     @Override
     protected int contentViewID() {
@@ -39,8 +39,7 @@ public class MainActivity extends BaseActivity implements IMvpView {
 
     @Override
     protected void initialize() {
-        iMvpPresenter = new MvpPresenterImpl(this, this);
-        iMvpPresenter.getData();
+
     }
 
     @OnClick(R.id.btnJump)
@@ -55,18 +54,4 @@ public class MainActivity extends BaseActivity implements IMvpView {
         Toast.makeText(MainActivity.this, baseMessageEvent.getBean().toString(), Toast.LENGTH_SHORT).show();
     }
 
-    @Override
-    public void getData(String data) {
-
-    }
-
-    @Override
-    public void onError(ErrorBean errorBean) {
-        Log.d("errorBean", errorBean.getMsg());
-    }
-
-    @Override
-    public void onFialure(String errorMsg) {
-
-    }
 }

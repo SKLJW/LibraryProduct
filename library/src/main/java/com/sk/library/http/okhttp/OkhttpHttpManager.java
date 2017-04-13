@@ -35,11 +35,15 @@ public class OkhttpHttpManager implements IHttpHelper {
     private Context mContext;
     private HttpListener mListener;
 
-    public OkhttpHttpManager(Context mContext, HttpListener mListener) {
+    public OkhttpHttpManager(Context mContext) {
         this.mContext = mContext;
-        this.mListener = mListener;
         okHttpClient = new OkHttpClient();
     }
+
+    public void setmListener(HttpListener httpListener) {
+        this.mListener = httpListener;
+    }
+
 
     @Override
     public void doGet(String baseUrl, Map<String, String> params) {

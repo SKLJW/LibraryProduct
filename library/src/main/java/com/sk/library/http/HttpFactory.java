@@ -14,14 +14,14 @@ public class HttpFactory {
     private static final String PREFIX = HttpContant.HTPPMODE.toLowerCase() + ".";
     private static final String SUFFIX = "HttpManager";
 
-    public static IHttpHelper getHttpHelper(Context context, HttpListener httpListener) {
+    public static IHttpHelper getHttpHelper(Context context) {
         IHttpHelper iHttpHelper = null;
 
         String pkgName = HttpFactory.class.getPackage().getName() + ".";
         try {
             String clsName = pkgName + PREFIX + HttpContant.HTPPMODE + SUFFIX;
             Constructor mConstructor = Class.forName(clsName).getConstructor(Context.class, HttpListener.class);
-            iHttpHelper = (IHttpHelper) mConstructor.newInstance(context, httpListener);
+            iHttpHelper = (IHttpHelper) mConstructor.newInstance(context);
         } catch (Exception e) {
             e.printStackTrace();
         }
