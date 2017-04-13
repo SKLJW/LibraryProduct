@@ -3,7 +3,6 @@ package com.sk.libraryproduct.Model;
 import android.content.Context;
 
 import com.sk.library.Bean.ErrorBean;
-import com.sk.library.http.HttpListener;
 import com.sk.library.listener.LoadDataListener;
 import com.sk.libraryproduct.http.HttpHandler;
 import com.sk.libraryproduct.http.HttpManager;

@@ -2,9 +2,6 @@ package com.sk.libraryproduct.http;
 
 import android.content.Context;
 
-import com.sk.library.http.HttpFactory;
-import com.sk.library.http.HttpListener;
-import com.sk.library.http.IHttpHelper;
 import com.sk.library.http.okhttp.OkhttpHttpManager;
 
 import java.util.HashMap;

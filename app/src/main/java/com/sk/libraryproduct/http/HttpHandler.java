@@ -3,7 +3,6 @@ package com.sk.libraryproduct.http;
 import com.android.volley.TimeoutError;
 import com.android.volley.VolleyError;
 import com.sk.library.Bean.ErrorBean;
-import com.sk.library.http.HttpListener;
 
 import org.json.JSONException;
 import org.json.JSONObject;
